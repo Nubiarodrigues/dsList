@@ -27,7 +27,11 @@ public class Game {
 	private String plataforms;
 	private Double score;
 	private String imgUrl;
+	
+	@Column(columnDefinition = "TEXT") // ajusta para receber mais q 255 caracteres
 	private String shortDescription;
+	
+	@Column(columnDefinition = "TEXT") // ajusta para receber mais q 255 caracteres
 	private String longDescription;
 
 	public Game() {
